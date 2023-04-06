@@ -13,15 +13,15 @@
 
 ---
 ### Сборка проекта
-git clone https://github.com/BlackRaveOn/cpp_prom_2023/tree/master/hw1
-makedir build
-cd build
-cmake ..
+git clone https://github.com/BlackRaveOn/cpp_prom_2023/tree/master/hw1  
+makedir build  
+cd build  
+cmake ..  
 make
 
 ---
 ### Выходные файлы
-В случае успешной сборке в папке build появятся следующие файлы:
+В случае успешной сборки в папке build появятся следующие файлы:
 - exec - основная программа
 - custom_integr_test - интеграционные тесты
 - custom_unit_test - юнит тесты
