@@ -1,6 +1,6 @@
 ### Modifying sequence operations
 Библиотека с набором функций для работы с контейнерами, например vector. 
-По функционалу функции эквиваленты функциям из  https://en.cppreference.com/w/cpp/algorithm
+По функционалу функции эквиваленты функциям из https://en.cppreference.com/w/cpp/algorithm
 Реализованы:
 - [fill_seq](https://en.cppreference.com/w/cpp/algorithm/fill)
 - [generate_seq](https://en.cppreference.com/w/cpp/algorithm/generate)
@@ -14,6 +14,7 @@
 ---
 ### Сборка проекта
 git clone https://github.com/BlackRaveOn/cpp_prom_2023/tree/master/hw1  
+cd hw1
 makedir build  
 cd build  
 cmake ..  
