@@ -14,8 +14,8 @@
 ---
 ### Сборка проекта
 git clone https://github.com/BlackRaveOn/cpp_prom_2023/tree/master/hw1  
-cd hw1
-makedir build  
+cd hw1  
+mkdir build  
 cd build  
 cmake ..  
 make
