@@ -14,7 +14,7 @@ void fill_seq(ForwardIterator first, ForwardIterator last, const T& value) {
 template<class ForwardIterator, class Generator>
 void generate_seq(ForwardIterator first, ForwardIterator last, Generator gen) {
     while (first != last) {
-        *first++ = std::rand();
+        *first++ = gen();
     }
 }
 
@@ -33,7 +33,7 @@ ForwardIterator partition_seq(ForwardIterator first, ForwardIterator last, Unary
         while (left <= right && pred(*left)) {
             left++;
         }
-        while (left <= right && pred(*right)) {
+        while (left <= right && !pred(*right)) {
             right--;
         }
         if (left <= right) {
@@ -49,7 +49,7 @@ template<typename RandomAccessIterator, class Generator>
 void shuffle_seq(RandomAccessIterator first, RandomAccessIterator last, Generator gen) {
     // Shuffle the sequence
     for (auto i = first; i != last; ++i) {
-        auto j = first + std::rand() % (last - first);
+        auto j = first + gen() % (last - first);
         iter_swap_seq(i, j);
     }
 }
