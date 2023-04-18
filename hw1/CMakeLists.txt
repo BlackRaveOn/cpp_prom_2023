@@ -5,7 +5,7 @@ project(hometask1)
 message(STATUS ${CMAKE_BINARY_DIR})
 
 set(
-        CXX_STANDARD 17
+        CMAKE_CXX_STANDARD 17
 )
 
 
